@@ -103,6 +103,7 @@ class _DashBoardState extends State<DashBoard> {
           onConfirm: (url) {
             setState(() {
               db.url = url;
+              db.update_uri();
               _loadStats();
             });
           },
